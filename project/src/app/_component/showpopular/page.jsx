@@ -6,7 +6,7 @@ function Showpopular(){
     const [showalldata,setpopular]=useState([])
  useEffect(()=>{
       async function getpopular(){
-        const data =await fetch("http://localhost:4000/api/food/showpopular");
+        const data =await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/food/showpopular");
         const result=await data.json()
         setpopular(result.data);
     }
