@@ -17,29 +17,61 @@ function Addlist(){
 const url = "https://food-dilvery-resturant-dj47.vercel.app";
 const sendData = async (e) => {
   e.preventDefault();
-  const formData = new FormData();
-  formData.append("name", data.nameproduct);
-  formData.append("price", data.priceproduct);
-formData.append("description", data.description  );
-  formData.append("category", data.valueselect);
-  formData.append("image", data.imgproduct);
-  const result=await fetch(`${url}/api/food/addfood`,{
-method: "POST",
-    
+
+  try {
+    if (!data.imgproduct) {
+      Swal.fire({
+        title: "Error!",
+        text: "Please select an image",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+      return;
+    }
+
+    const formData = new FormData();
+
+    formData.append("name", data.nameproduct);
+    formData.append("price", data.priceproduct);
+    formData.append("description", data.description);
+    formData.append("category", data.valueselect);
+    formData.append("image", data.imgproduct);
+
+    const result = await fetch(`${url}/api/food/addfood`, {
+      method: "POST",
       body: formData,
-  })
+    });
+
     const response = await result.json();
-    setimage(false);
-    setname('');
-    setprice('');
-    setvalue('');
-    setdescription('');
+
+    if (!result.ok) {
+      throw new Error(response.message || "Failed to add product");
+    }
+
     Swal.fire({
-  title: "Success!",
-  text: "Product added successfully",
-  icon: "success",
-  confirmButtonText: "OK"
-});
+      title: "Success!",
+      text: "Product added successfully",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+
+    // Clear form
+    setimage(false);
+    setname("");
+    setprice("");
+    setvalue("");
+    setdescription("");
+
+  } catch (error) {
+    console.error("Add product error:", error);
+
+    Swal.fire({
+      title: "Error!",
+      text: error.message || "Something went wrong",
+      icon: "error",
+      confirmButtonText: "OK",
+    });
+  }
 };
  const [allcat,setcat]=useState([]);
     useEffect(()=>{
