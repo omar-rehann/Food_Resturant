@@ -15,7 +15,7 @@ function Showpopular(){
 
  //delte item from data base
  const deleteitem=async(id)=>{
-    const item=await fetch(`http://localhost:4000/api/food/removepopular/${id}`,
+    const item=await fetch(`https://food-dilvery-resturant-dj47.vercel.app/api/food/removepopular/${id}`,
       {
             method: "DELETE"
         }

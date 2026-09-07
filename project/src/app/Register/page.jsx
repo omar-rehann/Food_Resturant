@@ -14,7 +14,7 @@ export default function Register() {
   }
    const actionregsiter=async(e)=>{
     e.preventDefault();
-    const senddata=await fetch("http://localhost:4000/api/user/register",{
+    const senddata=await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/user/register",{
       method:"POST",
         headers: {
       "Content-Type": "application/json",
