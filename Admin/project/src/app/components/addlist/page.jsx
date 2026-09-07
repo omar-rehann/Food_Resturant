@@ -14,7 +14,7 @@ function Addlist(){
   description  : description,
   valueselect: value
 };
-const url = "http://localhost:4000";
+const url = "https://food-dilvery-resturant-dj47.vercel.app";
 const sendData = async (e) => {
   e.preventDefault();
   const formData = new FormData();
@@ -45,7 +45,7 @@ method: "POST",
     useEffect(()=>{
         async function getcat(){
             try{
- const result=await fetch("http://localhost:4000/api/food/showcategory");
+ const result=await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/food/showcategory");
             const data =await result.json();
             setcat(data.data);
             }catch(error){

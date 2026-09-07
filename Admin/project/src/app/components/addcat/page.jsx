@@ -9,7 +9,7 @@ function Addcat(){
         image:image,
     };
     const sendcategory=async(e)=>{
-        const url="http://localhost:4000"
+        const url="https://food-dilvery-resturant-dj47.vercel.app"
       e.preventDefault();
   try{
 const formData = new FormData();

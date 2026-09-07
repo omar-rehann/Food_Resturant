@@ -6,7 +6,7 @@ function Show(){
   const [items,setitems]=useState([]);
 console.log("all items",items);
  useEffect(()=>{
-       const url = "http://localhost:4000";
+       const url = "https://food-dilvery-resturant-dj47.vercel.app";
    async function getitems(){
 const data  =await fetch(`${url}/api/food/showfood`);
     const result=await data.json();
@@ -63,7 +63,7 @@ const deleteitem = async (id) => {
                     <td className="px-4 py-3 text-gray-500">{i + 1}</td>
                     <td className="px-4 py-3">
                         <img
-                             src={`http://localhost:4000/uploads/${item.image}`}
+                             src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${item.image}`}
                             alt={item.name}
                             className="w-12 h-12 object-cover rounded-lg"
                         />
