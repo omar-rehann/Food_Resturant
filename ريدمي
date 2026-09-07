@@ -1,0 +1,584 @@
+# 🍔 مشروع مطعم وتوصيل الطعام — MERN Stack
+
+مشروع **Food Delivery & Restaurant** كامل مبني باستخدام تقنيات **MERN Stack**، ويحتوي على جزئين رئيسيين:
+
+* 👨‍💼 **لوحة تحكم الأدمن (Admin Dashboard)**
+* 👤 **واجهة المستخدم (User Interface)**
+
+يهدف المشروع إلى بناء نظام مطعم متكامل يسمح للأدمن بإدارة الأقسام والوجبات والمستخدمين والطلبات، بينما يستطيع المستخدم تصفح الأقسام والوجبات وإدارة المنتجات التي قام باختيارها ومتابعة إجمالي الطلب.
+
+---
+
+# 🚀 مميزات المشروع
+
+## 🔐 تسجيل الدخول وإنشاء الحساب
+
+يحتوي المشروع على نظام كامل للمصادقة والتحقق من المستخدمين.
+
+### المميزات:
+
+* إنشاء حساب جديد **Register**
+* تسجيل الدخول **Login**
+* التحقق من بيانات تسجيل الدخول
+* استخدام **JWT** لإنشاء Token للمستخدم
+* حماية الصفحات والـ Routes
+* التحقق من صلاحيات المستخدم
+* وجود حساب Admin مخصص
+* أي مستخدم آخر يقوم بالتسجيل يتم التعامل معه كمستخدم عادي
+* عرض رسائل تنبيه في حالة نجاح أو فشل تسجيل الدخول
+
+---
+
+# 👨‍💼 قسم الأدمن
+
+الأدمن لديه صلاحيات إدارة محتوى المطعم والمستخدمين والمنتجات.
+
+## 📊 لوحة التحكم
+
+من خلال لوحة التحكم يستطيع الأدمن إدارة البيانات الخاصة بالمطعم.
+
+---
+
+## 📂 إدارة الأقسام Categories
+
+يستطيع الأدمن:
+
+* إضافة قسم جديد
+* عرض جميع الأقسام
+* حذف الأقسام
+* تنظيم الوجبات حسب القسم
+
+ومن أمثلة الأقسام:
+
+```text
+🍕 Pizza
+🥤 Drinks
+🍔 Burgers
+🍽️ Dishes
+🍟 Meals
+```
+
+كل وجبة يتم ربطها بقسم معين، وبناءً على القسم تظهر الوجبة للمستخدم في القسم الخاص بها.
+
+---
+
+# 🍔 إدارة الوجبات Food Management
+
+يستطيع الأدمن إدارة جميع الوجبات الموجودة في المطعم.
+
+### يستطيع الأدمن:
+
+* إضافة وجبة جديدة
+* رفع صورة للوجبة
+* إضافة اسم الوجبة
+* إضافة سعر الوجبة
+* إضافة وصف للوجبة
+* تحديد القسم الخاص بالوجبة
+* عرض جميع الوجبات
+* حذف الوجبات
+
+كل وجبة تحتوي على بيانات مثل:
+
+```text
+Food Image
+Food Name
+Food Price
+Food Description
+Food Category
+```
+---
+# 👥 إدارة المستخدمين
+
+يستطيع الأدمن الاطلاع على المستخدمين المسجلين في النظام.
+
+ومن خلال قسم المستخدمين يستطيع الأدمن:
+
+* مشاهدة المستخدمين
+* مشاهدة بيانات المستخدم
+* متابعة الطلبات الخاصة بالمستخدم
+* معرفة المنتجات التي قام المستخدم بشرائها
+
+---
+
+# 📦 إدارة الطلبات
+
+يستطيع الأدمن مشاهدة بيانات الطلبات التي قام بها المستخدمون.
+
+وتشمل بيانات الطلب:
+
+* بيانات المستخدم
+* المنتجات التي قام بشرائها
+* سعر كل منتج
+* الكمية
+* إجمالي سعر الطلب
+
+---
+
+# 👤 قسم المستخدم
+
+المستخدم لديه واجهة خاصة يستطيع من خلالها التعامل مع المطعم والمنتجات.
+
+---
+
+## 🏠 الصفحة الرئيسية
+
+يستطيع المستخدم:
+
+* مشاهدة المطعم
+* مشاهدة الأقسام
+* مشاهدة الوجبات
+* تصفح المنتجات
+* الانتقال بين صفحات الموقع المختلفة
+
+---
+
+# 📂 الأقسام Categories
+
+يستطيع المستخدم مشاهدة جميع الأقسام الموجودة في المطعم.
+
+عند اختيار قسم معين، تظهر الوجبات التابعة لهذا القسم فقط.
+
+مثال:
+
+```text
+Pizza
+│
+├── Margherita Pizza
+├── Chicken Pizza
+└── Pepperoni Pizza
+
+Drinks
+│
+├── Cola
+├── Pepsi
+└── Orange Juice
+```
+
+وبذلك يتم عرض المنتجات بناءً على الـ **Category** الخاصة بكل وجبة.
+
+---
+
+# 🍕 الوجبات Food
+
+يستطيع المستخدم مشاهدة تفاصيل الوجبات، مثل:
+
+* صورة الوجبة
+* اسم الوجبة
+* وصف الوجبة
+* السعر
+* القسم التابع له المنتج
+
+ويمكنه اختيار المنتجات التي يريد شراءها.
+
+---
+
+# 🛒 المنتجات والطلبات
+
+يوجد للمستخدم جدول يستطيع من خلاله مشاهدة المنتجات التي قام باختيارها.
+
+ويحتوي الجدول على بيانات مثل:
+
+| المنتج | السعر | الكمية | الإجمالي |
+| ------ | ----: | -----: | -------: |
+| Pizza  |   $10 |      2 |      $20 |
+| Burger |    $8 |      1 |       $8 |
+
+ويتم حساب **Total Price** بناءً على المنتجات والكميات التي قام المستخدم باختيارها.
+
+---
+
+# 🛎️ الخدمات Services
+
+يحتوي الموقع على صفحة خاصة بالخدمات التي يوفرها المطعم.
+
+يمكن للمستخدم من خلالها معرفة الخدمات والمميزات التي يقدمها المطعم.
+
+---
+
+# 📞 التواصل Contact
+
+يحتوي الموقع على صفحة **Contact** يستطيع المستخدم من خلالها الوصول إلى معلومات التواصل الخاصة بالمطعم.
+
+---
+
+# 🛠️ التقنيات المستخدمة
+
+## 🎨 Frontend — الواجهة الأمامية
+
+* **React.js** — بناء واجهة المستخدم والمكونات.
+* **Next.js** — بناء وتنظيم صفحات التطبيق وإدارة الـ Routing.
+* **React Bootstrap** — بناء عناصر الواجهة والتصميم المتجاوب.
+* **Tailwind CSS** — تنسيق وتصميم الواجهات.
+* **Font Awesome** — استخدام الأيقونات.
+* **SweetAlert2** — عرض رسائل التنبيه والتأكيد للمستخدم.
+
+---
+
+## ⚙️ Backend — الواجهة الخلفية
+
+* **Node.js** — تشغيل بيئة الـ Backend.
+* **Express.js** — بناء الـ REST API وإدارة الـ Routes.
+* **MongoDB** — قاعدة البيانات.
+* **JWT (JSON Web Token)** — المصادقة والتحقق من المستخدم.
+* **Token Authentication** — حماية الـ Routes والبيانات.
+* **Validation** — التحقق من صحة البيانات المدخلة.
+* **Multer** — رفع الصور والملفات.
+
+---
+
+# 🔑 نظام Authentication
+
+يستخدم المشروع نظام **JWT Authentication** للتحقق من المستخدمين.
+
+تدفق تسجيل الدخول:
+
+```text
+Register
+   ↓
+Create User
+   ↓
+Login
+   ↓
+Validate Credentials
+   ↓
+Generate JWT Token
+   ↓
+Store Token
+   ↓
+Access Protected Routes
+```
+
+---
+
+# 👨‍💼 نظام Admin Authorization
+
+يتم تحديد الأدمن بناءً على البريد الإلكتروني المخصص للأدمن.
+
+```text
+Login
+  ↓
+Check Email
+  ↓
+Is Admin Email?
+   │
+   ├── Yes → Admin
+   │
+   └── No → User
+```
+
+وبالتالي لا يستطيع المستخدم العادي الوصول إلى صفحات وإمكانيات الأدمن.
+
+---
+
+# 🔄 طريقة عمل النظام
+
+## Admin Flow
+
+```text
+Admin Login
+     ↓
+Admin Dashboard
+     ↓
+Create Category
+     ↓
+Create Food
+     ↓
+Upload Food Image
+     ↓
+Assign Food To Category
+     ↓
+Food Appears In User Interface
+```
+
+---
+
+## User Flow
+
+```text
+Register
+   ↓
+Login
+   ↓
+Browse Categories
+   ↓
+Select Category
+   ↓
+View Food
+   ↓
+Select Products
+   ↓
+View Selected Products
+   ↓
+Calculate Total
+```
+
+---
+
+# 🏗️ Architecture
+
+المشروع مقسم إلى:
+
+```text
+Food Delivery Restaurant
+│
+├── Frontend
+│   │
+│   ├── Authentication
+│   │   ├── Login
+│   │   └── Register
+│   │
+│   ├── User
+│   │   ├── Home
+│   │   ├── Categories
+│   │   ├── Food
+│   │   ├── Products
+│   │   ├── Services
+│   │   └── Contact
+│   │
+│   └── Admin
+│       ├── Dashboard
+│       ├── Categories
+│       ├── Food Management
+│       ├── Users
+│       └── Orders
+│
+└── Backend
+    │
+    ├── Models
+    ├── Controllers
+    ├── Routes
+    ├── Middleware
+    ├── Authentication
+    ├── Validation
+    └── Database
+```
+
+---
+
+# 🔌 REST API
+
+يتواصل الـ Frontend مع الـ Backend من خلال REST APIs.
+
+أمثلة على الـ Endpoints:
+
+```text
+Authentication
+POST   /api/auth/register
+POST   /api/auth/login
+
+Categories
+POST   /api/category/add
+GET    /api/category/list
+DELETE /api/category/remove
+
+Food
+POST   /api/food/addfood
+GET    /api/food/list
+DELETE /api/food/removefood
+PUT    /api/food/updatefood
+
+Users
+GET    /api/user/list
+
+Orders
+POST   /api/order/create
+GET    /api/order/list
+```
+
+---
+
+# 📁 Backend Structure
+
+```text
+backend/
+│
+├── controllers/
+│   ├── authController.js
+│   ├── foodController.js
+│   ├── categoryController.js
+│   ├── userController.js
+│   └── orderController.js
+│
+├── models/
+│   ├── User.js
+│   ├── Food.js
+│   ├── Category.js
+│   └── Order.js
+│
+├── routes/
+│   ├── authRoutes.js
+│   ├── foodRoutes.js
+│   ├── categoryRoutes.js
+│   ├── userRoutes.js
+│   └── orderRoutes.js
+│
+├── middleware/
+│   └── authMiddleware.js
+│
+├── config/
+│   └── database.js
+│
+└── server.js
+```
+
+---
+
+# 📁 Frontend Structure
+
+```text
+frontend/
+│
+├── components/
+│   ├── Navbar
+│   ├── Footer
+│   ├── FoodCard
+│   ├── Category
+│   └── ...
+│
+├── pages/
+│   ├── Home
+│   ├── Login
+│   ├── Register
+│   ├── Services
+│   ├── Contact
+│   ├── Products
+│   └── Admin
+│
+├── context/
+│   └── StoreContext
+│
+└── ...
+```
+
+---
+
+# 📸 Screenshots
+
+يمكن إضافة صور المشروع هنا لتوضيح الواجهات:
+
+```text
+screenshots/
+│
+├── login.png
+├── register.png
+├── home.png
+├── categories.png
+├── food.png
+├── products.png
+├── admin-dashboard.png
+├── admin-food.png
+├── admin-categories.png
+└── admin-users.png
+```
+
+مثال:
+
+```markdown
+![Login](./screenshots/login.png)
+
+![Home](./screenshots/home.png)
+
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+```
+
+---
+
+# ⚙️ Installation
+
+قم بعمل Clone للمشروع:
+
+```bash
+git clone https://github.com/your-username/food-delivery-restaurant.git
+```
+
+ثم انتقل إلى مجلد الـ Backend:
+
+```bash
+cd backend
+```
+
+قم بتثبيت الحزم:
+
+```bash
+npm install
+```
+
+قم بإنشاء ملف:
+
+```text
+.env
+```
+
+وأضف بيانات الاتصال بقاعدة البيانات ومفتاح JWT:
+
+```env
+PORT=4000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+ثم قم بتشغيل الـ Backend:
+
+```bash
+npm run dev
+```
+
+بعد ذلك انتقل إلى الـ Frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+# 🎯 أهداف المشروع
+
+تم إنشاء هذا المشروع لتطبيق مفاهيم **MERN Stack** بشكل عملي، ومن أهم المفاهيم التي تم تطبيقها:
+
+* بناء واجهات باستخدام React.js
+* استخدام Next.js
+* بناء REST APIs
+* التعامل مع Node.js وExpress.js
+* التعامل مع MongoDB
+* Authentication
+* Authorization
+* JWT
+* Token-based Authentication
+* CRUD Operations
+* Data Validation
+* Image Upload
+* Admin Dashboard
+* إدارة المستخدمين
+* إدارة الأقسام
+* إدارة الوجبات
+* إدارة المنتجات والطلبات
+* حساب إجمالي الطلبات
+* تصميم Responsive
+
+---
+
+# 🚧 التطويرات المستقبلية
+
+يمكن تطوير المشروع مستقبلًا بإضافة:
+
+* 💳 الدفع الإلكتروني
+* 📍 تتبع الطلبات
+* 🔔 الإشعارات
+* ⭐ تقييم الوجبات
+* ❤️ إضافة المنتجات إلى المفضلة
+* 🔎 البحث عن الوجبات
+* 🏷️ نظام الخصومات والكوبونات
+* 📊 إحصائيات متقدمة للأدمن
+* 📦 حالات الطلبات المختلفة
+
+---
+
+# 👨‍💻 المطور
+
+**Omar Rehan**
+
+**MERN Stack / Frontend Developer**
+
+تم بناء المشروع باستخدام ❤️ وتقنيات **MERN Stack**.

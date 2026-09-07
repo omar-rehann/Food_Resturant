@@ -1,0 +1,55 @@
+سعيد بمشاركة أول مشروع لي باستخدام MERN Stack.
+
+بعد فترة من التركيز على تطوير الواجهات الأمامية باستخدام React.js وNext.js، قررت أن أخطو خطوة جديدة وأبدأ في بناء تطبيقات Full Stack بشكل متكامل.
+
+المشروع عبارة عن نظام Food Delivery & Restaurant Management، ويحتوي على جزئين رئيسيين:
+
+Admin Dashboard:
+
+* تسجيل الدخول والتحقق من صلاحيات الأدمن.
+* إضافة  وحذف الأقسام.
+* إضافة  وحذف الوجبات.
+* رفع صور الوجبات.
+* إدارة المستخدمين.
+* متابعة المنتجات والطلبات.
+
+User Application:
+
+* إنشاء حساب وتسجيل الدخول.
+* عرض أقسام المطعم.
+* عرض الوجبات حسب القسم.
+* اختيار المنتجات.
+* عرض المنتجات التي تم اختيارها.
+* حساب إجمالي الأسعار.
+* صفحات الخدمات والتواصل.
+
+خلال تنفيذ المشروع، طبقت العديد من المفاهيم المهمة مثل:
+
+JWT Authentication
+Token-based Authentication
+Authorization
+REST APIs
+Data Validation
+Image Upload باستخدام Multer
+CRUD Operations
+MongoDB Database
+
+التقنيات المستخدمة في المشروع:
+
+React.js
+Next.js
+Node.js
+Express.js
+MongoDB
+React Bootstrap
+Tailwind CSS
+Font Awesome
+SweetAlert2
+
+أعتبر هذا المشروع خطوة مهمة بالنسبة لي، لأنه نقلني من التركيز على بناء الواجهات فقط إلى فهم وبناء التطبيق بشكل كامل، بداية من الـ Frontend مرورًا بالـ Backend وحتى قاعدة البيانات والـ Authentication والـ Authorization.
+
+ما زلت أتعلم وأطور من مهاراتي من خلال بناء مشاريع حقيقية وتطبيق ما أتعلمه عمليًا.
+
+وهذا مجرد البداية.
+
+#MERN #MERNStack #FullStack #ReactJS #NextJS #NodeJS #ExpressJS #MongoDB #JavaScript #WebDevelopment #FullStackDeveloper
