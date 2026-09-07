@@ -87,7 +87,7 @@ const data  =await fetch(`${url}/api/food/showfood`);
         {/* img */}
         <div className="image w-full h-56 mb-4">
    <img
-                             src={`http://localhost:4000/uploads/${ser.image}`}
+                             src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${ser.image}`}
                             alt={ser.name}
                             className="w-100 h-100 object-cover rounded-lg"
                         />

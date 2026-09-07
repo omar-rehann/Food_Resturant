@@ -52,7 +52,7 @@ function Categories(){
     "
   >
     <img
-                             src={`http://localhost:4000/uploads/${ser.image}`}
+                             src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${ser.image}`}
                             alt={ser.name}
                             className="w-12 h-12 object-cover rounded-lg"
                         />

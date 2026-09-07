@@ -55,7 +55,7 @@ function Showpopular(){
             <td className="px-4 py-3 text-gray-500">{i + 1}</td>
             <td className="px-4 py-3">
                 <img
-                    src={`http://localhost:4000/uploads/${item.image}`}
+                    src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${item.image}`}
                     alt={item.name}
                     className="w-12 h-12 object-cover rounded-lg"
                 />
