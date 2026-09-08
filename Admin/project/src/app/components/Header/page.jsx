@@ -6,7 +6,7 @@ import Link from 'next/link';
 function Navbarcomponent() {
     const logout=()=>{
     localStorage.removeItem("token")
-    window.location.href='http://localhost:3000/';
+    window.location.href='https://food-resturant-pagf.vercel.app/';
   }
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary p-2">

@@ -9,7 +9,7 @@ function Header() {
      const router = useRouter();
   const logout=()=>{
     localStorage.removeItem("token")
-    router.push('/')
+    router.push('https://food-resturant-pagf.vercel.app/')
   }
   return (
     <>

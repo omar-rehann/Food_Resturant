@@ -43,7 +43,7 @@ export default function LoginPage() {
                 confirmButtonText: "OK",
             });
             if (data.email === "omarrehan724@gmail.com") {
-                window.location.href = "http://localhost:3001";
+                window.location.href = "https://food-resturant-n5jc.vercel.app/";
             } else {
                 router.push("/Homepage"); 
             }
