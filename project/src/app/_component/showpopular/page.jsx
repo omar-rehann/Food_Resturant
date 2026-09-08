@@ -6,7 +6,7 @@ function Showpopular(){
     const [showalldata,setpopular]=useState([])
  useEffect(()=>{
       async function getpopular(){
-        const data =await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/food/showpopular");
+        const data =await fetch("http://localhost:4000/api/food/showpopular");
         const result=await data.json()
         setpopular(result.data);
     }
@@ -15,7 +15,7 @@ function Showpopular(){
 
  //delte item from data base
  const deleteitem=async(id)=>{
-    const item=await fetch(`https://food-dilvery-resturant-dj47.vercel.app/api/food/removepopular/${id}`,
+    const item=await fetch(`http://localhost:4000/api/food/removepopular/${id}`,
       {
             method: "DELETE"
         }
@@ -53,12 +53,11 @@ function Showpopular(){
             className="border-b border-gray-100 hover:bg-gray-50 transition-colors"
         >
             <td className="px-4 py-3 text-gray-500">{i + 1}</td>
-            <td className="px-4 py-3">
-                <img
-                    src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${item.image}`}
-                    alt={item.name}
-                    className="w-12 h-12 object-cover rounded-lg"
-                />
+            <td className="px-4 text-center  mx-auto py-3">
+               <img
+                           src={item.image} alt={item.name} 
+                            className="w-22 h-22 object-cover rounded-lg text-center mx-auto"
+                        />
             </td>
             <td className="px-4 py-3 font-medium text-gray-800 capitalize">
                 {item.name}

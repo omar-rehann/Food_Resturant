@@ -2,8 +2,9 @@ import express from "express";
 import cors from "cors";
 import { connectdb } from "./config/db.js";
 import { controlluser } from "./routes/use.js";
-import "dotenv/config";
 import foodRouter from "./routes/addfood.js";
+import "dotenv/config";
+
 const App = express();
 App.use(express.json());
 App.use(cors());
@@ -16,8 +17,10 @@ App.get("/", (req, res) => {
 });
 App.use("/api/food", foodRouter);
 App.use("/api/user", controlluser);
-
-App.use("/uploads", express.static("uploads"));
 App.listen(port, () => {
     console.log("sucsses connect server")
 })
+App.use((err, req, res, next) => {
+    console.error("UNHANDLED ERROR:", err);
+    res.status(500).json({ success: false, message: err.message });
+});

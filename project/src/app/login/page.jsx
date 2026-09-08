@@ -24,7 +24,7 @@ export default function LoginPage() {
         return; 
     }
     try {
-        const senddata = await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/user/login", {
+        const senddata = await fetch("http://localhost:4000/api/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

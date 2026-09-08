@@ -7,7 +7,7 @@ function Showallcat() {
     useEffect(()=>{
         async function getcat(){
             try{
- const result=await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/food/showcategory");
+ const result=await fetch("http://localhost:4000/api/food/showcategory");
             const data =await result.json();
             setcat(data.data);
             }catch(error){
@@ -18,7 +18,7 @@ function Showallcat() {
     },[]);
     const deletecat=async (id)=>{
         console.log("id",id)
-        const result=await fetch(`https://food-dilvery-resturant-dj47.vercel.app/api/food/removecategory/${id}`, {
+        const result=await fetch(`http://localhost:4000/api/food/removecategory/${id}`, {
     method: "DELETE"
 });
       
@@ -46,8 +46,7 @@ function Showallcat() {
                     <td className="px-4 py-3 text-gray-500">{i + 1}</td>
                     <td className="px-4 py-3">
                         <img
-                             src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${item.image}`}
-                            alt={item.name}
+                         src={item.image} alt={item.name} 
                             className="w-12 h-12 object-cover rounded-lg"
                         />
                     </td>

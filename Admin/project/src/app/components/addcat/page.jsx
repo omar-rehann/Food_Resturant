@@ -11,47 +11,29 @@ function Addcat(){
    const sendcategory = async (e) => {
   e.preventDefault();
 
-  const url = "https://food-dilvery-resturant-dj47.vercel.app";
+  const url = "http://localhost:4000";
 
   try {
-    if (!data.image) {
-      Swal.fire({
-        title: "Error!",
-        text: "Please select an image",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
-      return;
-    }
-
     const formData = new FormData();
-
     formData.append("name", data.name);
     formData.append("image", data.image);
-
     const result = await fetch(`${url}/api/food/addcategory`, {
       method: "POST",
       body: formData,
     });
-
-    const final = await result.json();
-
-    if (!result.ok) {
-      throw new Error(final.message || "Failed to add category");
+const final=await result.json()
+    console.log("result =",final)
+    if(final.success){
+        Swal.fire({
+        title: "Success!",
+        text: "Category added successfully",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+      setimage(false);
+      setname('')
     }
-
-    Swal.fire({
-      title: "Success!",
-      text: "Category added successfully",
-      icon: "success",
-      confirmButtonText: "OK",
-    });
-
-    setname("");
-    setimage(false);
-
-    console.log(final);
-
+ 
   } catch (error) {
     console.error("Add category error:", error);
 

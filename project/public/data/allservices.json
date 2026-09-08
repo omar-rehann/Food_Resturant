@@ -1,0 +1,181 @@
+[{
+        "id": 1,
+        "name": "Dine In",
+        "icon": "fa-solid fa-utensils",
+        "description": "Enjoy your meal in a comfortable dining area with full table service."
+    },
+    {
+        "id": 2,
+        "name": "Home Delivery",
+        "icon": "fa-solid fa-truck",
+        "description": "We deliver your favorite dishes fresh and hot straight to your doorstep."
+    },
+    {
+        "id": 3,
+        "name": "Takeaway",
+        "icon": "fa-solid fa-bag-shopping",
+        "description": "Order online or by phone and pick up your meal without waiting in line."
+    },
+    {
+        "id": 4,
+        "name": "Online Ordering",
+        "icon": "fa-solid fa-mobile-screen",
+        "description": "Browse the menu and place your order easily through our app or website."
+    },
+    {
+        "id": 5,
+        "name": "Custom Orders",
+        "icon": "fa-solid fa-list-check",
+        "description": "Customize your dish with special ingredients or dietary preferences."
+    },
+    {
+        "id": 6,
+        "name": "Air Conditioned Seating",
+        "icon": "fa-solid fa-fan",
+        "description": "Relax in a cool, air-conditioned dining space all year round."
+    },
+    {
+        "id": 7,
+        "name": "Outdoor Garden Seating",
+        "icon": "fa-solid fa-seedling",
+        "description": "Dine outdoors in a relaxing garden setting surrounded by fresh greenery."
+    },
+    {
+        "id": 8,
+        "name": "Food Safety & Hygiene",
+        "icon": "fa-solid fa-bug",
+        "description": "Strict hygiene and pest control standards to ensure safe, quality food."
+    },
+    {
+        "id": 9,
+        "name": "Event Transport",
+        "icon": "fa-solid fa-truck-moving",
+        "description": "Logistics support for moving catering equipment and supplies to event venues."
+    },
+    {
+        "id": 10,
+        "name": "Kitchen Equipment Maintenance",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "description": "Regular maintenance and repair of kitchen appliances and cooking equipment."
+    },
+    {
+        "id": 11,
+        "name": "Dining Area Cleaning",
+        "icon": "fa-solid fa-spray-can-sparkles",
+        "description": "Spotless tables, windows, and dining spaces for a pleasant guest experience."
+    },
+    {
+        "id": 12,
+        "name": "Staff Uniform Service",
+        "icon": "fa-solid fa-shirt",
+        "description": "Clean, pressed uniforms for staff to maintain a professional appearance."
+    },
+    {
+        "id": 13,
+        "name": "Rooftop Dining",
+        "icon": "fa-solid fa-house",
+        "description": "A scenic rooftop dining area with a relaxed, open-air atmosphere."
+    },
+    {
+        "id": 14,
+        "name": "Interior Design & Ambiance",
+        "icon": "fa-solid fa-border-all",
+        "description": "Thoughtfully designed flooring and interiors to create a welcoming atmosphere."
+    },
+    {
+        "id": 15,
+        "name": "Lounge & Waiting Area",
+        "icon": "fa-solid fa-couch",
+        "description": "Comfortable seating for guests waiting to be seated or for takeaway pickup."
+    },
+    {
+        "id": 16,
+        "name": "CCTV & Security",
+        "icon": "fa-solid fa-shield-halved",
+        "description": "Monitored security cameras to ensure the safety of guests and staff."
+    },
+    {
+        "id": 17,
+        "name": "Free Wi-Fi",
+        "icon": "fa-solid fa-wifi",
+        "description": "Complimentary high-speed Wi-Fi for guests dining in."
+    },
+    {
+        "id": 18,
+        "name": "Beverage Station",
+        "icon": "fa-solid fa-water-ladder",
+        "description": "A wide variety of fresh juices, water, and refreshing drinks on offer."
+    },
+    {
+        "id": 19,
+        "name": "Reservation Support",
+        "icon": "fa-solid fa-key",
+        "description": "Dedicated support line to help manage and confirm your table reservations."
+    },
+    {
+        "id": 20,
+        "name": "Quality Inspection",
+        "icon": "fa-solid fa-magnifying-glass",
+        "description": "Regular quality checks on ingredients and dishes to ensure top standards."
+    },
+    {
+        "id": 21,
+        "name": "Table Reservation",
+        "icon": "fa-solid fa-calendar-check",
+        "description": "Reserve your table in advance to secure the best spot for your visit."
+    },
+    {
+        "id": 22,
+        "name": "Event Catering",
+        "icon": "fa-solid fa-champagne-glasses",
+        "description": "Custom catering menus for weddings, parties, and corporate events."
+    },
+    {
+        "id": 23,
+        "name": "Private Dining",
+        "icon": "fa-solid fa-user-group",
+        "description": "Book a private room for special occasions and intimate gatherings."
+    },
+    {
+        "id": 24,
+        "name": "Loyalty Rewards",
+        "icon": "fa-solid fa-gift",
+        "description": "Earn points on every order and redeem them for discounts and free meals."
+    },
+    {
+        "id": 25,
+        "name": "24/7 Support",
+        "icon": "fa-solid fa-headset",
+        "description": "Our support team is available around the clock to assist with your orders."
+    },
+    {
+        "id": 26,
+        "name": "Gift Cards",
+        "icon": "fa-solid fa-gift",
+        "description": "Purchase gift cards for friends and family to enjoy our restaurant."
+    },
+    {
+        "id": 27,
+        "name": "Meal Subscription Plans",
+        "icon": "fa-solid fa-calendar-days",
+        "description": "Weekly or monthly meal plans delivered on a set schedule at a discounted rate."
+    },
+    {
+        "id": 28,
+        "name": "Kids Menu & Play Area",
+        "icon": "fa-solid fa-child-reaching",
+        "description": "A dedicated kids menu and play zone to keep young guests happy."
+    },
+    {
+        "id": 29,
+        "name": "Live Music & Entertainment",
+        "icon": "fa-solid fa-music",
+        "description": "Live performances and entertainment to enhance your dining experience."
+    },
+    {
+        "id": 30,
+        "name": "Order Tracking",
+        "icon": "fa-solid fa-location-dot",
+        "description": "Track your delivery order in real time from the kitchen to your door."
+    }
+]

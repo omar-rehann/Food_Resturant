@@ -1,0 +1,61 @@
+[{
+        "id": 1,
+        "name": "House Cleaning",
+        "icon": "fa-solid fa-broom",
+        "description": "Professional home cleaning services for a spotless and healthy living space."
+    },
+    {
+        "id": 2,
+        "name": "Plumbing",
+        "icon": "fa-solid fa-faucet-drip",
+        "description": "Expert plumbers for leak repairs, pipe installation, and maintenance."
+    },
+    {
+        "id": 3,
+        "name": "Electrical",
+        "icon": "fa-solid fa-bolt",
+        "description": "Safe electrical repairs, installations, and troubleshooting by certified technicians."
+    },
+    {
+        "id": 4,
+        "name": "Painting",
+        "icon": "fa-solid fa-paint-roller",
+        "description": "Interior and exterior painting services with premium finishes."
+    },
+    {
+        "id": 5,
+        "name": "Carpentry",
+        "icon": "fa-solid fa-hammer",
+        "description": "Custom furniture, repairs, and woodwork crafted with precision."
+    },
+    {
+        "id": 6,
+        "name": "Air Conditioning",
+        "icon": "fa-solid fa-fan",
+        "description": "AC installation, maintenance, and repair to keep your home comfortable."
+    },
+    {
+        "id": 7,
+        "name": "Gardening",
+        "icon": "fa-solid fa-seedling",
+        "description": "Garden maintenance, landscaping, and lawn care services."
+    },
+    {
+        "id": 8,
+        "name": "Pest Control",
+        "icon": "fa-solid fa-bug",
+        "description": "Effective pest control solutions for insects, rodents, and termites."
+    },
+    {
+        "id": 9,
+        "name": "Home Moving",
+        "icon": "fa-solid fa-truck-moving",
+        "description": "Reliable packing, moving, and relocation services for your home."
+    },
+    {
+        "id": 10,
+        "name": "Appliance Repair",
+        "icon": "fa-solid fa-screwdriver-wrench",
+        "description": "Repair services for refrigerators, washing machines, ovens, and more."
+    }
+]

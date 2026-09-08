@@ -4,9 +4,8 @@ import Swal from "sweetalert2";
 import { useEffect, useState } from "react"
 function Show(){
   const [items,setitems]=useState([]);
-console.log("all items",items);
  useEffect(()=>{
-       const url = "https://food-dilvery-resturant-dj47.vercel.app";
+       const url = "http://localhost:4000";
    async function getitems(){
 const data  =await fetch(`${url}/api/food/showfood`);
     const result=await data.json();
@@ -30,7 +29,6 @@ const deleteitem = async (id) => {
 
     const response = await result.json();
     setitems((prev)=>prev.filter((e)=>e._id!==id))
-    console.log(response)
 };
     return(
         <>
@@ -63,8 +61,7 @@ const deleteitem = async (id) => {
                     <td className="px-4 py-3 text-gray-500">{i + 1}</td>
                     <td className="px-4 py-3">
                         <img
-                             src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${item.image}`}
-                            alt={item.name}
+                            src={item.image} alt={item.name} 
                             className="w-12 h-12 object-cover rounded-lg"
                         />
                     </td>

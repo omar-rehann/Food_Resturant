@@ -14,60 +14,50 @@ function Addlist(){
   description  : description,
   valueselect: value
 };
-const url = "https://food-dilvery-resturant-dj47.vercel.app";
 const sendData = async (e) => {
   e.preventDefault();
 
   try {
-    if (!data.imgproduct) {
-      Swal.fire({
-        title: "Error!",
-        text: "Please select an image",
-        icon: "error",
-        confirmButtonText: "OK",
-      });
-      return;
-    }
-
     const formData = new FormData();
-
     formData.append("name", data.nameproduct);
     formData.append("price", data.priceproduct);
     formData.append("description", data.description);
     formData.append("category", data.valueselect);
     formData.append("image", data.imgproduct);
-
-    const result = await fetch(`${url}/api/food/addfood`, {
+    const result = await fetch(`http://localhost:4000/api/food/addfood`, {
       method: "POST",
       body: formData,
     });
-
     const response = await result.json();
-
-    if (!result.ok) {
-      throw new Error(response.message || "Failed to add product");
-    }
-
-    Swal.fire({
+    if(response.success){
+        Swal.fire({
       title: "Success!",
       text: "Product added successfully",
       icon: "success",
       confirmButtonText: "OK",
     });
-
-    // Clear form
+     // Clear form
     setimage(false);
     setname("");
     setprice("");
     setvalue("");
     setdescription("");
+    }else {
+  Swal.fire({
+    title: "Error",
+    text: "Please try again",
+    icon: "error",
+    confirmButtonText: "OK",
+  })
+}
+
 
   } catch (error) {
     console.error("Add product error:", error);
 
     Swal.fire({
       title: "Error!",
-      text: error.message || "Something went wrong",
+      text: error.message,
       icon: "error",
       confirmButtonText: "OK",
     });
@@ -77,7 +67,7 @@ const sendData = async (e) => {
     useEffect(()=>{
         async function getcat(){
             try{
- const result=await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/food/showcategory");
+ const result=await fetch("http://localhost:4000/api/food/showcategory");
             const data =await result.json();
             setcat(data.data);
             }catch(error){
@@ -86,8 +76,6 @@ const sendData = async (e) => {
         }
         getcat();
     },[]);
-    console.log("all cat",allcat)
-
     return(
         <>
         <div className="addlist  mt-4">
@@ -124,7 +112,6 @@ const sendData = async (e) => {
     value={description}
         placeholder="Description"
         rows="4"
-        value={description}
         className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
     ></textarea>
 

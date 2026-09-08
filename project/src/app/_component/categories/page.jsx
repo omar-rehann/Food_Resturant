@@ -7,7 +7,7 @@ function Categories(){
     useEffect(()=>{
        async function getcat(){
             try{
- const result=await fetch("https://food-dilvery-resturant-dj47.vercel.app/api/food/showcategory");
+ const result=await fetch("http://localhost:4000/api/food/showcategory");
             const data =await result.json();
             setcat(data.data);
             }catch(error){
@@ -52,8 +52,7 @@ function Categories(){
     "
   >
     <img
-                             src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${ser.image}`}
-                            alt={ser.name}
+                             src={ser.image} alt={ser.name} 
                             className="w-12 h-12 object-cover rounded-lg"
                         />
   </div>

@@ -13,7 +13,7 @@ function ChooseCategories(){
      console.log("choose",choose);
   const [items,setitems]=useState([]);
     useEffect(()=>{
-       const url = "https://food-dilvery-resturant-dj47.vercel.app/";
+       const url = "http://localhost:4000";
    async function getitems(){
 const data  =await fetch(`${url}/api/food/showfood`);
     const result=await data.json();
@@ -31,7 +31,7 @@ const data  =await fetch(`${url}/api/food/showfood`);
       console.log("quantity sent:", quantity[component._id]);
     
       const response = await fetch(
-        "https://food-dilvery-resturant-dj47.vercel.app/api/food/addpopular",
+        "http://localhost:4000/api/food/addpopular",
         {
           method: "POST",
           headers: {
@@ -86,8 +86,7 @@ const data  =await fetch(`${url}/api/food/showfood`);
         {/* img */}
         <div className="image w-full h-56 mb-4">
     <img
-                             src={`https://food-dilvery-resturant-dj47.vercel.app/uploads/${ser.image}`}
-                            alt={ser.name}
+src={ser.image} alt={ser.name} 
                             className="w-100 h-100 object-cover rounded-lg"
                         />
 </div>
