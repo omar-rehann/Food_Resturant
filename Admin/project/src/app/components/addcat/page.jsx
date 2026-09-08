@@ -11,7 +11,7 @@ function Addcat(){
    const sendcategory = async (e) => {
   e.preventDefault();
 
-  const url = "http://localhost:4000";
+  const url = "https://food-resturant-ochre.vercel.app";
 
   try {
     const formData = new FormData();
