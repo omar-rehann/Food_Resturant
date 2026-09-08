@@ -13,7 +13,7 @@ function ChooseCategories(){
      console.log("choose",choose);
   const [items,setitems]=useState([]);
     useEffect(()=>{
-       const url = "http://localhost:4000";
+       const url = "https://food-resturant-ochre.vercel.app";
    async function getitems(){
 const data  =await fetch(`${url}/api/food/showfood`);
     const result=await data.json();
@@ -31,7 +31,7 @@ const data  =await fetch(`${url}/api/food/showfood`);
       console.log("quantity sent:", quantity[component._id]);
     
       const response = await fetch(
-        "http://localhost:4000/api/food/addpopular",
+        "https://food-resturant-ochre.vercel.app/api/food/addpopular",
         {
           method: "POST",
           headers: {

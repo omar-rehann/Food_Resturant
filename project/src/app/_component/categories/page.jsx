@@ -7,7 +7,7 @@ function Categories(){
     useEffect(()=>{
        async function getcat(){
             try{
- const result=await fetch("http://localhost:4000/api/food/showcategory");
+ const result=await fetch("https://food-resturant-ochre.vercel.app/api/food/showcategory");
             const data =await result.json();
             setcat(data.data);
             }catch(error){

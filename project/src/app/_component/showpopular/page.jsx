@@ -6,7 +6,7 @@ function Showpopular(){
     const [showalldata,setpopular]=useState([])
  useEffect(()=>{
       async function getpopular(){
-        const data =await fetch("http://localhost:4000/api/food/showpopular");
+        const data =await fetch("https://food-resturant-ochre.vercel.app/api/food/showpopular");
         const result=await data.json()
         setpopular(result.data);
     }
@@ -15,7 +15,7 @@ function Showpopular(){
 
  //delte item from data base
  const deleteitem=async(id)=>{
-    const item=await fetch(`http://localhost:4000/api/food/removepopular/${id}`,
+    const item=await fetch(`https://food-resturant-ochre.vercel.app/api/food/removepopular/${id}`,
       {
             method: "DELETE"
         }
