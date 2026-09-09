@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 function HeroSection(){
     return(
         <>
-<section className="relative h-[600px] w-full">
+<section className="relative w-full">
 
   <img
     src="https://images.pexels.com/photos/5865152/pexels-photo-5865152.jpeg"
