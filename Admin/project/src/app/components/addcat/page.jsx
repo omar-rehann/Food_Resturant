@@ -11,7 +11,7 @@ function Addcat(){
    const sendcategory = async (e) => {
   e.preventDefault();
 
-  const url = "https://food-resturant-ochre.vercel.app";
+  const url = "https://food-resturant-ochre.vercel.app/";
 
   try {
     const formData = new FormData();

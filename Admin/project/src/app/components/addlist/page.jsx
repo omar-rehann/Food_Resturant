@@ -24,7 +24,7 @@ const sendData = async (e) => {
     formData.append("description", data.description);
     formData.append("category", data.valueselect);
     formData.append("image", data.imgproduct);
-    const result = await fetch(`https://food-resturant-ochre.vercel.app/api/food/addfood`, {
+    const result = await fetch(`https://food-resturant-ochre.vercel.app//api/food/addfood`, {
       method: "POST",
       body: formData,
     });

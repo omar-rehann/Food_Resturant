@@ -31,16 +31,20 @@ export default function Register() {
   return; 
 }
     const result=await senddata.json();
-    console.log(result);
+    if(result.success){
+       console.log(result);
     setemail('');
     setname('');
     setpass('');
       Swal.fire({
-  title: "Success!",
+  title: "Successs!",
   text: "  successfully Register",
   icon: "success",
   confirmButtonText: "OK"
 });
+      
+    }
+   
    }
   return (
     <div className="min-h-screen grid md:grid-cols-2">
