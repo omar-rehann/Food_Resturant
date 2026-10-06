@@ -27,7 +27,7 @@ function AllServices(){
        <div className="services bg-white py-20">
   {/* Header */}
   <div className="container mx-auto text-center px-6 mb-14">
-    <h2 className="text-4xl md:text-5xl font-serif font-semibold text-gray-900">
+    <h2 className="text-4xl md:text-5xl  font-semibold text-gray-900">
       All Services
     </h2>
 
