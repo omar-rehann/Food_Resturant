@@ -13,7 +13,7 @@ function Appstore() {
                 Download Our App
               </span>
 
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-5">
+              <h2 className=" text-4xl md:text-5xl font-semibold text-gray-900 leading-tight mb-5">
                 Home services
                 <br />
                 at your fingertips.

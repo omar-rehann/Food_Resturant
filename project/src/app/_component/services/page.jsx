@@ -27,7 +27,7 @@ function Services(){
         <div className="services bg-white py-16">
   {/* Header */}
   <div className="container  p-2 m-2 me-4  px-6  mb-12">
-    <h3 className="text-3xl md:text-4xl font-serif font-semibold text-gray-900 mb-5">
+    <h3 className="text-3xl md:text-4xl  font-semibold text-gray-900 mb-5">
       Our Services
     </h3>
 
@@ -78,7 +78,7 @@ function Services(){
           </div>
 
           {/* Title */}
-          <h2 className="text-xl font-serif font-semibold text-gray-900 mb-3">
+          <h2 className="text-xl  font-semibold text-gray-900 mb-3">
             {ser.name}
           </h2>
 

@@ -36,7 +36,7 @@ function Whychoose() {
         Why Choose Us
       </span>
 
-      <h2 className="font-serif text-gray-900 text-4xl md:text-5xl leading-tight mb-5">
+      <h2 className=" text-gray-900 text-4xl md:text-5xl leading-tight mb-5">
         Cooked with care,
         <br />
         served with pride.
@@ -84,7 +84,7 @@ function Whychoose() {
             <i className={`${reason.icon} text-lg`}></i>
           </div>
 
-          <h3 className="font-serif text-gray-900 text-xl mb-2">
+          <h3 className=" text-gray-900 text-xl mb-2">
             {reason.title}
           </h3>
 

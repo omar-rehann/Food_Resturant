@@ -55,7 +55,7 @@ const data  =await fetch(`${url}/api/food/showfood`);
         <div className="popular">
             {/* Header */}
   <div className="container mt-5  p-2 m-2 me-5  px-6  mb-12">
-    <h3 className="text-3xl md:text-4xl font-serif font-semibold text-gray-900 mb-5">
+    <h3 className="text-3xl md:text-4xl  font-semibold text-gray-900 mb-5">
       Top Popular Product
     </h3>
 
@@ -93,7 +93,7 @@ const data  =await fetch(`${url}/api/food/showfood`);
 </div>
 
           {/* Title */}
-          <h2 className="text-xl font-serif font-semibold text-gray-900 mb-3">
+          <h2 className="text-xl  font-semibold text-gray-900 mb-3">
             {ser.name}
           </h2>
 
