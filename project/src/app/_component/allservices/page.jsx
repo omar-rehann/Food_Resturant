@@ -82,7 +82,7 @@ function AllServices(){
           </div>
 
           {/* Title */}
-          <h2 className="text-xl font-serif font-semibold text-gray-900 mb-3">
+          <h2 className="text-xl  font-semibold text-gray-900 mb-3">
             {ser.name}
           </h2>
 

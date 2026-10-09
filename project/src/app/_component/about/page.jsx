@@ -18,7 +18,7 @@ function About() {
             About Us
           </span>
 
-          <h2 className="font-serif text-4xl md:text-5xl leading-tight text-[#171310] mb-6">
+          <h2 className=" text-4xl md:text-5xl leading-tight text-[#171310] mb-6">
             A table where every
             <br />
             recipe has a story.
