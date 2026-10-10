@@ -1,13 +1,41 @@
-# 🍔 Food Delivery Restaurant — MERN Stack
+<!-- Animated Header -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C2D12,50:EA580C,100:F59E0B&height=220&section=header&text=Food%20Delivery%20Restaurant&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=MERN%20Stack%20%7C%20Admin%20Dashboard%20%2B%20User%20App&descAlignY=58&descSize=18" width="100%" />
+</p>
 
-A full-stack **Food Delivery Restaurant Web Application** built using the **MERN Stack**.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=EA580C&center=true&vCenter=true&width=600&lines=Full-Stack+Food+Ordering+Platform;JWT+Auth+%7C+Role-Based+Access;Admin+Dashboard+%2B+Customer+App;Built+with+the+MERN+Stack" alt="Typing animation" />
+</p>
 
-The application consists of two main parts:
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+</p>
 
-* 👨‍💼 **Admin Dashboard**
-* 👤 **User Application**
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-screenshots">Screenshots</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-api">API</a>
+</p>
 
-The project provides authentication, authorization, food and category management, user management, and order management.
+---
+
+## 📖 About
+
+A full-stack **Food Delivery Restaurant** web application built with the **MERN Stack**.
+
+It has two parts:
+
+| 👨‍💼 Admin Dashboard | 👤 User Application |
+| --- | --- |
+| Manage categories, food, users, and orders | Browse the menu, build a cart, and place orders |
 
 ---
 
@@ -15,370 +43,197 @@ The project provides authentication, authorization, food and category management
 
 ### 🔐 Authentication & Authorization
 
-* User Registration
-* User Login
-* JWT Authentication
-* Protected Routes
-* Role-based Authorization
-* Admin account based on a specific email
-* Any other registered account is treated as a normal user
-* Invalid login credentials handling
+- User registration and login
+- JWT-based authentication
+- Protected routes (frontend and API)
+- Role-based authorization (Admin / User)
+- Admin account identified by a specific email; every other account is a normal user
+- Invalid login credentials handling
 
----
+### 👨‍💼 Admin vs 👤 User
 
-# 👨‍💼 Admin Dashboard
+| 👨‍💼 Admin Dashboard | 👤 User Application |
+| --- | --- |
+| 📂 Add, view, and delete **categories** | 🏠 Browse the home page and categories |
+| 🍔 Add, view, and delete **food items** | 🍕 View food by category (image, name, description, price) |
+| 🖼️ Upload food images | 🛒 Add items to the cart |
+| 👥 View registered users and their info | 🧮 Automatic total price calculation |
+| 📦 View all orders and purchased products | 📄 Services page |
+| 💰 See order totals and order details | 📞 Contact page |
 
-The admin has full control over the restaurant content and users.
-
-## 📂 Category Management
-
-The admin can:
-
-* Add new categories
-* View all categories
-* Delete categories
-* Add new Meals
-* View all Meals
-* Delete Meals
-
-Examples:
-
-* 🍕 Pizza
-* 🥤 Drinks
-* 🍔 Burgers
-* 🍽️ Dishes
-* 🥗 Salads
-* 🍲 Soups
-* 🍰 Desserts
-*  Others
-
-
+### 📂 Categories
 
 Food items are displayed according to their assigned category.
 
----
+> 🍕 Pizza • 🥤 Drinks • 🍔 Burgers • 🍽️ Dishes • 🥗 Salads • 🍲 Soups • 🍰 Desserts
 
-## 🍔 Food Management
-
-The admin can:
-
-* Add new food items
-* Upload food images
-* Add food name
-* Add food price
-* Add food description
-* Assign food to a category
-* View all food items
-* Delete food items
-
-Each food item contains information such as:
+### 🍔 Food Item Fields
 
 ```text
-Food Name
-Image
-Price
-Description
-Category
+Name  |  Image  |  Price  |  Description  |  Category
 ```
 
----
-
-## 👥 User Management
-
-The admin can:
-
-* View registered users
-* View user information
-* View users' orders
-* Monitor purchased products
-
-This allows the admin to manage and monitor restaurant customers.
-
----
-
-## 📦 Order Management
-
-The admin can view:
-
-* Customer information
-* Purchased products
-* Product prices
-* Total order price
-* Order details
-
----
-
-# 👤 User Application
-
-Users can interact with the restaurant through the customer interface.
-
-## 🏠 Home Page
-
-Users can:
-
-* Browse the restaurant
-* View available categories
-* Browse food items
-* Navigate through the website
-
----
-
-## 📂 Food Categories
-
-Users can select a category and view the food items belonging to that category.
-
-For example:
-
-```text
-Pizza
- ├── Margherita
- ├── Pepperoni
- └── Chicken Pizza
-
-Drinks
- ├── Cola
- ├── Pepsi
- └── Orange Juice
-```
-
----
-
-## 🍔 Food Items
-
-Users can view:
-
-* Food image
-* Food name
-* Description
-* Price
-* Category
-
-Users can select the products they want to purchase.
-
----
-
-## 🛒 Cart / Orders
-
-Users have an order/cart section where they can view their selected products.
-
-The table contains information such as:
+### 🛒 Cart Example
 
 | Product | Price | Quantity | Total |
 | ------- | ----: | -------: | ----: |
 | Pizza   |   $10 |        2 |   $20 |
 | Burger  |    $8 |        1 |    $8 |
-
-The application calculates the total price of the selected products.
-
----
-
-## 📄 Services Page
-
-The application also includes a services section where users can learn about the services provided by the restaurant.
+| **Total** |     |          | **$28** |
 
 ---
 
-## 📞 Contact Page
+## 📸 Screenshots
 
-Users can access the restaurant's contact information through the Contact page.
+> Put your images inside a `screenshots/` folder with these names (or change the paths below).
+
+### 👤 User Application
+
+| Home | Categories | Food |
+| :---: | :---: | :---: |
+| <img src="./screenshots/home.png" width="280" /> | <img src="./screenshots/categories.png" width="280" /> | <img src="./screenshots/food.png" width="280" /> |
+
+| Cart | Login | Register |
+| :---: | :---: | :---: |
+| <img src="./screenshots/cart.png" width="280" /> | <img src="./screenshots/login.png" width="280" /> | <img src="./screenshots/register.png" width="280" /> |
+
+### 👨‍💼 Admin Dashboard
+
+| Dashboard | Food Management | Categories | Users |
+| :---: | :---: | :---: | :---: |
+| <img src="./screenshots/admin-dashboard.png" width="220" /> | <img src="./screenshots/admin-food.png" width="220" /> | <img src="./screenshots/admin-categories.png" width="220" /> | <img src="./screenshots/admin-users.png" width="220" /> |
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
 ### Frontend
 
-* **React.js** — Building the user interface and reusable components
-* **Next.js** — Application structure and routing
-* **React Bootstrap** — Responsive UI components
-* **Tailwind CSS** — Custom styling and responsive design
-* **Font Awesome** — Icons
-* **SweetAlert2** — Alerts and user notifications
+<p>
+  <img src="https://skillicons.dev/icons?i=react,tailwind,bootstrap,vite" height="48" alt="Frontend" />
+</p>
+
+- **React.js** — UI and reusable components
+- **React Bootstrap** — Responsive UI components
+- **Tailwind CSS** — Custom styling and responsive design
+- **Font Awesome** — Icons
+- **SweetAlert2** — Alerts and notifications
 
 ### Backend
 
-* **Node.js** — Backend runtime environment
-* **Express.js** — Building the REST API
-* **MongoDB** — Database
-* **Mongoose** — MongoDB object modeling
-* **JWT (JSON Web Token)** — Authentication and authorization
-* **Token-based Authentication** — Securing protected routes
-* **Validation** — Validating user and application data
-* **Multer** — Handling image/file uploads
+<p>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb" height="48" alt="Backend" />
+</p>
 
-## Database
+- **Node.js** and **Express.js** — REST API
+- **MongoDB** and **Mongoose** — Database and object modeling
+- **JWT** — Authentication and authorization
+- **Multer** — Image and file uploads
+- **Validation** — User and application data checks
 
-* MongoDB
-* Mongoose
+### Tools
 
-## Other Tools
-
-* Git
-* GitHub
-* Postman
-* Cloudinary / Image Upload
-* npm
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,postman,npm,vscode" height="48" alt="Tools" />
+</p>
 
 ---
 
-# 🏗️ Project Architecture
+## 🏗️ Architecture
 
-```text
-Food Delivery Restaurant
-│
-├── Frontend
-│   │
-│   ├── Authentication
-│   │   ├── Login
-│   │   └── Register
-│   │
-│   ├── User
-│   │   ├── Home
-│   │   ├── Categories
-│   │   ├── Food
-│   │   ├── Cart / Orders
-│   │   ├── Services
-│   │   └── Contact
-│   │
-│   └── Admin
-│       ├── Dashboard
-│       ├── Categories
-│       ├── Food Management
-│       ├── Users
-│       └── Orders
-│
-└── Backend
-    │
-    ├── Models
-    ├── Controllers
-    ├── Routes
-    ├── Middleware
-    ├── Authentication
-    └── Database
+```mermaid
+flowchart TB
+  subgraph Frontend
+    A[Auth: Login / Register]
+    B[User: Home, Categories, Food, Cart, Services, Contact]
+    C[Admin: Dashboard, Categories, Food, Users, Orders]
+  end
+  subgraph Backend
+    D[Routes] --> E[Middleware]
+    E --> F[Controllers]
+    F --> G[Models]
+  end
+  H[(MongoDB)]
+  Frontend -->|REST API| D
+  G --> H
 ```
 
----
+### 🔑 Authentication Flow
 
-# 🔑 Authentication Flow
-
-The application uses JWT-based authentication.
-
-```text
-Register
-   ↓
-User Account Created
-   ↓
-Login
-   ↓
-JWT Token
-   ↓
-Authentication Middleware
-   ↓
-Protected Routes
+```mermaid
+flowchart LR
+  A[Register] --> B[Account Created] --> C[Login] --> D[JWT Token] --> E[Auth Middleware] --> F[Protected Routes]
 ```
 
-Admin authorization is handled separately.
+```mermaid
+flowchart LR
+  A[Login] --> B{Admin email?}
+  B -- Yes --> C[Admin]
+  B -- No --> D[User]
+```
 
-```text
-Login
-  ↓
-Check Email
-  ↓
-Admin Email?
-  ├── Yes → Admin
-  └── No  → User
+### 🔄 Application Flow
+
+**Admin**
+
+```mermaid
+flowchart LR
+  A[Admin Login] --> B[Dashboard] --> C[Create Category] --> D[Create Food] --> E[Assign to Category] --> F[Appears in User App]
+```
+
+**User**
+
+```mermaid
+flowchart LR
+  A[Register] --> B[Login] --> C[Browse Categories] --> D[View Food] --> E[Select Products] --> F[Cart] --> G[Total Calculated]
 ```
 
 ---
 
-# 🔄 Application Flow
+## 📁 Project Structure
 
-### Admin
-
-```text
-Admin Login
-     ↓
-Admin Dashboard
-     ↓
-Create Category
-     ↓
-Create Food
-     ↓
-Assign Food to Category
-     ↓
-Food Appears in User Application
-```
-
-### User
-
-```text
-User Registration
-       ↓
-User Login
-       ↓
-Browse Categories
-       ↓
-Select Category
-       ↓
-View Food
-       ↓
-Select Products
-       ↓
-View Cart / Orders
-       ↓
-Calculate Total
-```
-
----
-
-# 📁 Backend Structure
+<details>
+<summary><b>Backend</b></summary>
 
 ```text
 backend/
-│
 ├── controllers/
 │   ├── authController.js
 │   ├── foodController.js
 │   ├── categoryController.js
 │   ├── userController.js
 │   └── orderController.js
-│
 ├── models/
 │   ├── User.js
 │   ├── Food.js
 │   ├── Category.js
 │   └── Order.js
-│
 ├── routes/
 │   ├── authRoutes.js
 │   ├── foodRoutes.js
 │   ├── categoryRoutes.js
 │   ├── userRoutes.js
 │   └── orderRoutes.js
-│
 ├── middleware/
 │   └── authMiddleware.js
-│
 ├── config/
 │   └── database.js
-│
 └── server.js
 ```
 
----
+</details>
 
-# 📁 Frontend Structure
+<details>
+<summary><b>Frontend</b></summary>
 
 ```text
 frontend/
-│
 ├── components/
 │   ├── Navbar
 │   ├── Footer
 │   ├── FoodCard
 │   ├── Category
 │   └── ...
-│
 ├── pages/
 │   ├── Home
 │   ├── Login
@@ -387,76 +242,39 @@ frontend/
 │   ├── Contact
 │   ├── Cart
 │   └── Admin
-│
 ├── context/
 │   └── StoreContext
-│
 └── App.jsx
 ```
 
----
-
-# 🔒 Security
-
-The project implements:
-
-* JWT authentication
-* Protected API routes
-* Authorization middleware
-* Password authentication
-* Admin/User role separation
-* Protected Admin Dashboard
-* Server-side authorization
+</details>
 
 ---
 
-# 📸 Screenshots
+## 🔒 Security
 
-You can add screenshots of the project here:
-
-```text
-screenshots/
-├── login.png
-├── register.png
-├── home.png
-├── categories.png
-├── food.png
-├── cart.png
-├── admin-dashboard.png
-├── admin-food.png
-├── admin-categories.png
-└── admin-users.png
-```
-
-Example:
-
-```markdown
-![Login](./screenshots/login.png)
-
-![Home](./screenshots/home.png)
-
-![Admin Dashboard](./screenshots/admin-dashboard.png)
-```
+- JWT authentication
+- Protected API routes
+- Authorization middleware
+- Admin / User role separation
+- Protected Admin Dashboard
+- Server-side authorization checks
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation
 
-Clone the repository:
+**1. Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/food-delivery-restaurant.git
+git clone https://github.com/omar-rehann/food-delivery-restaurant.git
+cd food-delivery-restaurant
 ```
 
-Navigate to the backend:
+**2. Backend**
 
 ```bash
 cd backend
-```
-
-Install dependencies:
-
-```bash
 npm install
 ```
 
@@ -468,13 +286,11 @@ MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
-Run the backend:
-
 ```bash
 npm run dev
 ```
 
-Then run the frontend:
+**3. Frontend** (in a new terminal)
 
 ```bash
 cd frontend
@@ -484,70 +300,65 @@ npm run dev
 
 ---
 
-# 🌐 API
+## 🌐 API
 
-The frontend communicates with the backend through REST APIs.
-
-Example endpoints:
-
-```text
-POST   /api/auth/register
-POST   /api/auth/login
-
-POST   /api/category/add
-GET    /api/category/list
-DELETE /api/category/remove
-
-POST   /api/food/addfood
-GET    /api/food/list
-DELETE /api/food/removefood
-PUT    /api/food/updatefood
-
-GET    /api/user/list
-GET    /api/order/list
-POST   /api/order/create
-```
+| Method | Endpoint | Description |
+| :---: | --- | --- |
+| `POST` | `/api/auth/register` | Register a new user |
+| `POST` | `/api/auth/login` | Login and get a JWT |
+| `POST` | `/api/category/add` | Add a category |
+| `GET` | `/api/category/list` | List categories |
+| `DELETE` | `/api/category/remove` | Delete a category |
+| `POST` | `/api/food/addfood` | Add a food item |
+| `GET` | `/api/food/list` | List food items |
+| `PUT` | `/api/food/updatefood` | Update a food item |
+| `DELETE` | `/api/food/removefood` | Delete a food item |
+| `GET` | `/api/user/list` | List users (admin) |
+| `GET` | `/api/order/list` | List orders (admin) |
+| `POST` | `/api/order/create` | Create an order |
 
 ---
 
-# 🎯 Project Goals
+## 🎯 Project Goals
 
-This project was built to practice and demonstrate real-world **MERN Stack development**, including:
+Built to practice and demonstrate real-world **MERN Stack** development:
 
-* Frontend development with React
-* Backend development with Node.js and Express
-* MongoDB database management
-* REST API development
-* Authentication
-* Authorization
-* CRUD operations
-* File/image uploads
-* State management
-* Admin dashboard development
-* User and order management
+- React frontend development and state management
+- Node.js and Express REST APIs
+- MongoDB database design
+- Authentication and authorization
+- CRUD operations and image uploads
+- Admin dashboard, user, and order management
 
 ---
 
-# 🚧 Future Improvements
+## 🚧 Future Improvements
 
-Possible future features:
-
-* 💳 Online Payment Integration
-* 📍 Order Tracking
-* 🔔 Notifications
-* ⭐ Food Reviews & Ratings
-* ❤️ Favorite Products
-* 📦 Advanced Order Status
-* 📊 Advanced Admin Analytics
-* 🔎 Food Search
-* 🏷️ Discount & Coupon System
+- [ ] 💳 Online payment integration
+- [ ] 📍 Order tracking
+- [ ] 🔔 Notifications
+- [ ] ⭐ Food reviews and ratings
+- [ ] ❤️ Favorite products
+- [ ] 📦 Advanced order status
+- [ ] 📊 Advanced admin analytics
+- [ ] 🔎 Food search
+- [ ] 🏷️ Discounts and coupons
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
-**Omar Rehan**
+<p align="center">
+  <b>Omar Rehan</b><br/>
+  Full-Stack Developer
+</p>
 
-Frontend / MERN Stack Developer
+<p align="center">
+  <a href="https://github.com/omar-rehann"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/omar-rehann"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://omar-rehann.github.io/Omar-Rehann/"><img src="https://img.shields.io/badge/Portfolio-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+</p>
 
-Built with ❤️ using the MERN Stack.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7C2D12,50:EA580C,100:F59E0B&height=100&section=footer" width="100%" />
+</p>
